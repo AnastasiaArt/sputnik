@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sputnik</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/28e1e67eb0.js"></script>
+</head>
+<body>
+<main class="flex w-full">
+    <aside
+        class="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6 px-4 pb-4 bg-indigo-900 h-screen overflow-x-hidden overflow-y-auto fixed inset-y-0 left-0 z-50 shadow-md scrolling-touch">
+        <a href="#"
+           class="inline-block w-full h-20 pb-4 pt-4 px-4 py-4 mb-4 text-2xl text-white border-b border-gray-600">
+            LOGO
+        </a>
+        <h2 class="py-4 px-4 text-white border-b border-gray-600 uppercase">Server Details</h2>
+        <nav class="mt-4 w-full">
+            <ul class="w-full">
+                <li>
+                    <a href="#" class="sidebar-link transition">
+                        <span class="w-8 inline-block"><i class="fas fa-chalkboard"></i></span>
+                        Sites
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link transition">
+                        <span class="w-8 inline-block">
+                        <i class="fas fa-key"></i>
+                        </span>
+                        SSH-Keys
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link transition">
+                        <span class="w-8 inline-block">
+                        <i class="fas fa-server"></i>
+                        </span>
+                        DataBase
+                    </a>
+                </li>
+                <li>
+                <li>
+                    <a href="#" class="sidebar-link transition">
+                        <span class="w-8 inline-block">
+                        <i class="fab fa-evernote"></i>
+                        </span>
+                        PHP
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link transition">
+                        <span class="w-8 inline-block">
+                        <i class="far fa-calendar-alt"></i>
+                        </span>
+                        Scheduler
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link transition">
+                        <span class="w-8 inline-block">
+                        <i class="fas fa-bolt"></i>
+                        </span>
+                        Daemons
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link transition">
+                        <span class="w-8 inline-block">
+                        <i class="fas fa-globe"></i>
+                        </span>
+                        Network
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link transition">
+                        <span class="w-8 inline-block">
+                        <i class="far fa-chart-bar"></i>
+                        </span>
+                        Monitoring
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link transition">
+                        <span class="w-8 inline-block">
+                        <i class="fas fa-tag"></i>
+                        </span>
+                        Meta
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="w-full sm:w-1/2 md:w-3/4 lg:w-4/5 xl:w-5/6 ml-auto overflow-y-auto scrolling-touch relative">
+        <nav
+            class="w-inherit h-20 pb-4 pt-4 pl-4 pr-8 flex bg-white justify-between items-center shadow-md border-b border-b-2 border-gray-100 fixed top-0 right-0">
+            <form class="w-1/2">
+                <div class="input-wrap hover:outline-none hover:border-indigo-400">
+                    <input class="input" placeholder="Search" aria-label="Search">
+                    <button class="input-icon hover:text-indigo-600" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                </div>
+            </form>
+
+            <a href="server.html" class="btn btn-yellow ml-auto mx-4">Create Server</a>
+            <div class="ml-4 pr-4">
+
+                <a href="singup.html" class="inline-block hover:text-indigo-500 transition">
+                    <span
+                        class="text-indigo-500 rounded-full h-10 w-10 border-2 border-indigo-500 inline-flex items-center justify-center mr-1">
+                         <i class="fas fa-hippo"></i>
+                    </span>
+                    User
+                </a>
+            </div>
+        </nav>
+        <div class="p-4 mt-20 flex flex-col pr-8">
+            <h1 class="text-3xl font-sans font-thin mb-6">Create server</h1>
+            <p class="mb-16">Somethig text...</p>
+            <div class="w-full  flex flex-col">
+                <form class="w-full  bg-white shadow-md rounded pr-8 pb-4 mb-8">
+                    <div
+                        class="-mt-6 w-20 h-20 bg-yellow-500 mb-6 rounded shadow-md p-4 px-4 mx-4 text-white flex justify-center items-center">
+                        <span class="text-white text-2xl">
+                            <i class="fas fa-server"></i>
+                        </span>
+                    </div>
+                    <div class="mb-6 ml-4 px-4 md:flex md:items-center">
+                        <label class="label md:w-1/2 lg:w-1/4" for="serverName">
+                            Name
+                        </label>
+
+                        <input
+                            class="input border border-gray-200 rounded hover:outline-none hover:border-yellow-400 md:w-1/2 lg:w-3/4"
+                            id="serverName" type="text">
+                    </div>
+                    <div class="mb-6 ml-4 px-4 md:flex md:items-center">
+                        <label class="label md:w-1/2 lg:w-1/4" for="serverSize">
+                            Size(RAM)
+                        </label>
+
+                        <input
+                            class="input border border-gray-200 rounded hover:outline-none hover:border-yellow-400 md:w-1/2 lg:w-3/4"
+                            id="serverSize" inputmode="decimal" pattern="-?(\d+|\d+.\d+|.\d+)([eE][-+]?\d+)? ">
+                    </div>
+                    <div class="mb-6 ml-4 px-4 md:flex md:items-center">
+                        <label class="label md:w-1/2 lg:w-1/4" for="serverPort">
+                            SSH Port
+                        </label>
+
+                        <input
+                            class="input border border-gray-200 rounded hover:outline-none hover:border-yellow-400 md:w-1/2 lg:w-1/4"
+                            id="serverPort" inputmode="decimal" pattern="-?(\d+|\d+.\d+|.\d+)([eE][-+]?\d+)?">
+                        <label class="label md:w-1/2 lg:w-1/4" for="serverIp">
+                            IP Address
+                        </label>
+
+                        <input
+                            class="input border border-gray-200 rounded hover:outline-none hover:border-yellow-400 md:w-1/2 lg:w-1/4"
+                            id="serverIp" inputmode="decimal" pattern="-?(\d+|\d+.\d+|.\d+)([eE][-+]?\d+)?">
+                    </div>
+                    <div class="md:flex md:items-center mb-6 ml-4 px-4">
+                        <label class="label md:w-1/2 lg:w-1/4" for="serverPhp">
+                            PHP Version
+                        </label>
+                        <div class="relative md:w-1/2 lg:w-1/4">
+                            <select class="input border border-gray-200 hover:border-yellow-400 relative"
+                                    id="serverPhp">
+                                <option>7.1</option>
+                                <option>7.2</option>
+                                <option>7.3</option>
+                            </select>
+                            <span
+                                class="block pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <label class="label md:w-1/2 lg:w-1/4 pl-4" for="serverDatabase">
+                            Database
+                        </label>
+                        <div class="relative md:w-1/2 lg:w-1/4">
+                            <select class="input  border border-gray-200 hover:border-yellow-400 relative"
+                                    id="serverDatabase">
+                                <option>MySQL (5.1)</option>
+                                <option>MySQL (5.2)</option>
+                                <option>MySQL (5.3)</option>
+                            </select>
+                            <span
+                                class="block pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mb-6 ml-4 px-4 md:flex md:items-center">
+                        <label class="label md:w-1/2 lg:w-1/4" for="serverRecipe">
+                            Post-Provision Recipe
+                        </label>
+                        <div class="relative md:w-1/2 lg:w-3/4">
+                            <select class="input  border border-gray-200 hover:border-yellow-400 relative"
+                                    id="serverRecipe">
+                                <option>None</option>
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                            <span
+                                class="block pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mb-6 ml-4 px-4 md:flex md:items-center">
+                        <label class="label md:w-1/2 lg:w-1/4" for="serverDatadabaseName">
+                            Database Name
+                        </label>
+
+                        <input
+                            class="input border border-gray-200 rounded hover:outline-none hover:border-yellow-400 md:w-1/2 lg:w-3/4"
+                            id="serverDatadabaseName" type="text">
+                    </div>
+                    <div class="md:flex md:items-center mb-6 px-4 ml-4">
+                        <div class="text-gray-700 text-sm pr-4 uppercase md:w-1/2 lg:w-1/4"></div>
+                        <label class="w-full md:w-1/2 lg:w-3/4 block text-gray-700">
+                            <input class="mr-2 leading-tight" type="checkbox">
+                            <span class="text-sm">Provision as load balanser</span>
+                        </label>
+                    </div>
+                    <div class="md:flex md:items-center mb-6 px-4 ml-4">
+                        <div class="md:w-1/2 lg:w-1/3"></div>
+                        <div class="w-full">
+                            <button class="btn btn-yellow mr-4" type="submit">Create Database</button>
+                            <button class="btn btn-gray mr-4" type="submit">Cancel</button>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+
+</body>
+</html>
