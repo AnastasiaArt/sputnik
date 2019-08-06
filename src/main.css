@@ -16,7 +16,6 @@ body {
 
 .sidebar-link {
     @apply font-sans block text-base p-4 truncate text-white w-full rounded;
-
 }
 
 .sidebar-link:hover {
@@ -70,13 +69,13 @@ body {
 .btn-gray:hover {
     @apply bg-gray-600;
 }
+
 .w-inherit {
     width: inherit;
 }
 
 .input {
     @apply appearance-none bg-transparent w-full py-2 px-3 text-gray-700 bg-white rounded;
-
 }
 
 .input:focus {
@@ -94,4 +93,25 @@ body {
 .label {
     @apply block text-gray-700 text-sm pr-4 uppercase text-right
 }
+
+.table-th {
+    @apply font-normal py-3 px-4 text-left;
+}
+
+.table-td {
+    @apply font-normal py-2 px-4 text-sm;
+}
+
+.shadow-yellow {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(236, 201, 75, .4);
+}
+
+.shadow-green {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(72, 187, 120, .4);
+}
+
+.shadow-purple {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(128, 90, 213, .4);
+}
+
 @tailwind utilities;

@@ -94,7 +94,7 @@
     </aside>
     <div class="w-full sm:w-1/2 md:w-3/4 lg:w-4/5 xl:w-5/6 ml-auto overflow-y-auto scrolling-touch relative">
         <nav
-            class="w-inherit h-20 pb-4 pt-4 pl-4 pr-8 flex bg-white justify-between items-center shadow-md border-b border-b-2 border-gray-100 fixed top-0 right-0">
+            class="w-inherit h-20 pb-4 pt-4 pl-4 pr-8 flex bg-white justify-between items-center shadow-md border-b border-b-2 border-gray-100 fixed top-0 right-0 z-50">
             <form class="w-1/2">
                 <div class="input-wrap hover:outline-none hover:border-indigo-400">
                     <input class="input" placeholder="Search" aria-label="Search">
@@ -121,9 +121,9 @@
             <h1 class="text-3xl font-sans font-thin mb-6">Create server</h1>
             <p class="mb-16">Somethig text...</p>
             <div class="w-full  flex flex-col">
-                <form class="w-full  bg-white shadow-md rounded pr-8 pb-4 mb-8">
+                <form class="w-full  bg-white shadow-md rounded pr-8 pb-4 mb-24">
                     <div
-                        class="-mt-6 w-20 h-20 bg-yellow-500 mb-6 rounded shadow-md p-4 px-4 mx-4 text-white flex justify-center items-center">
+                        class="-mt-6 w-20 h-20 bg-yellow-500 mb-6 rounded shadow-yellow p-4 px-4 mx-4 text-white flex justify-center items-center">
                         <span class="text-white text-2xl">
                             <i class="fas fa-server"></i>
                         </span>
@@ -167,7 +167,7 @@
                             PHP Version
                         </label>
                         <div class="relative md:w-1/2 lg:w-1/4">
-                            <select class="input border border-gray-200 hover:border-yellow-400 relative"
+                            <select class="input border border-gray-200 hover:border-yellow-400"
                                     id="serverPhp">
                                 <option>7.1</option>
                                 <option>7.2</option>
@@ -198,8 +198,8 @@
                         <label class="label md:w-1/2 lg:w-1/4" for="serverRecipe">
                             Post-Provision Recipe
                         </label>
-                        <div class="relative md:w-1/2 lg:w-3/4">
-                            <select class="input  border border-gray-200 hover:border-yellow-400 relative"
+                        <div class="relative md:w-1/2 lg:w-3/4 ">
+                            <select class="input border border-gray-200 hover:border-yellow-400"
                                     id="serverRecipe">
                                 <option>None</option>
                                 <option>1</option>
@@ -231,11 +231,56 @@
                         <div class="md:w-1/2 lg:w-1/3"></div>
                         <div class="w-full">
                             <button class="btn btn-yellow mr-4" type="submit">Create Database</button>
-                            <button class="btn btn-gray mr-4" type="submit">Cancel</button>
+                            <button class="btn btn-gray mr-4" type="button">Cancel</button>
 
                         </div>
                     </div>
                 </form>
+            </div>
+            <div class="w-full flex flex-col">
+                <div class="w-full  bg-white shadow-md rounded pr-8 pb-4 mb-8">
+                    <div class="flex justify-between items-center">
+                        <p
+                            class="-mt-6 w-auto inline-block h-20 bg-yellow-500 mb-6 rounded shadow-yellow p-4 px-6 mx-4 text-white align-middle">
+                            <span class="flex h-full w-full justify-center items-center text-lg text-medium"> Active Servers</span>
+
+                        </p>
+                        <button class="btn btn-gray mr-4 ml-auto h-auto" type="button"><span
+                            class="mr-4">All Servers</span> <i class="fas fa-angle-down"></i></button>
+                    </div>
+                    <div class="ml-6 mr-12 my-4">
+                        <table class="w-full">
+                            <tr class="border-b border-gray-200">
+                                <th class="text-yellow-700 table-th">Name</th>
+                                <th class="text-yellow-700 table-th">IP Adress</th>
+                                <th class="text-yellow-700 table-th">PHP Version</th>
+                                <th class="text-yellow-700 table-th">Status</th>
+                                <th class="text-yellow-700 table-th">Connection</th>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-yellow-200">
+                                <td class="table-td">First</td>
+                                <td class="table-td">192.168.0.3</td>
+                                <td class="table-td">7.3</td>
+                                <td class="table-td">Active</td>
+                                <td class="table-td">Successful</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-yellow-200">
+                                <td class="table-td">Second</td>
+                                <td class="table-td">180.168.0.3</td>
+                                <td class="table-td">7.3</td>
+                                <td class="table-td">Active</td>
+                                <td class="table-td">Successful</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-yellow-200">
+                                <td class="table-td">Third</td>
+                                <td class="table-td">192.168.0.0</td>
+                                <td class="table-td">7.2</td>
+                                <td class="table-td">Active</td>
+                                <td class="table-td">Successful</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -245,4 +290,4 @@
 </footer>
 
 </body>
-</html>
+</html>s
