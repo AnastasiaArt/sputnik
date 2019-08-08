@@ -15,7 +15,7 @@ body {
 }
 
 .sidebar-link {
-    @apply font-sans block text-base p-4 truncate text-white w-full rounded;
+    @apply font-sans block text-sm p-4 truncate text-white w-full rounded;
 }
 
 .sidebar-link:hover {
@@ -23,7 +23,7 @@ body {
 }
 
 .btn {
-    @apply inline-block transition rounded shadow-md text-white py-2 px-6;
+    @apply inline-block text-center transition rounded shadow-md text-white py-2 px-6 text-lg tracking-wider;
 }
 
 .btn:focus {

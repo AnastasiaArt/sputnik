@@ -8,68 +8,37 @@
     <script src="https://kit.fontawesome.com/28e1e67eb0.js"></script>
 </head>
 <body>
-<header class="w-full h-20 fixed top-0 items-center flex left-0 shadow-md  bg-indigo-800 ">
-    <div class="container mx-auto">
-        <nav
-            class="w-full px-4 justify-between items-center flex">
-            <a href="#"
-               class="inline-block w-full md:w-1/3 lg:w-1/4 px-4 text-2xl text-white">
-                LOGO
-            </a>
-            <ul class="w-full md:w-1/3 lg:w-1/4 text-right flex justify-end items-center">
-                <li class="ml-4">
-                    <a href="login.html" class="text-white">Login</a>
-                </li>
-                <li class="ml-4">
-                    <a href="singup.html" class="text-white">Sing Up</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    </div>
-</header>
 <main class="w-full h-screen bg-gradient-blue">
 
     <div class="h-full w-full flex justify-center items-center flex-col shadow-md">
-        <form class="bg-white shadow-xl rounded  pb-4 mx-4 w-full md:w-1/2 lg:w-1/3">
-            <div class="-mt-6 bg-purple-600 mb-6 rounded shadow-purple p-4 px-4 text-white mx-4 text-center">
-                <h1 class="mb-4 text-2xl">Sing Up</h1>
-                <p class="text-sm text-gray-100">Something text or icons</p>
-            </div>
-            <div class="mb-6 px-4 md:flex md:items-center">
-                <label class="label md:w-1/2 lg:w-1/3" for="name">
-                    Name
-                </label>
+        <a href="#"
+           class="block w-100 px-4 text-2xl text-white mb-10 mx-auto">
+            LOGO
+        </a>
+        <div class="bg-white shadow-xl rounded  pb-4 mx-4 w-full md:w-1/2 max-w-md">
+            <h1 class="my-4 text-3xl text-center font-thin px-4">Sing Up</h1>
+            <p class="text-sm px-4 text-center mb-6">Something text or icons</p>
+            <form class="py-4 px-8 w-full">
                 <div
-                    class="input-wrap hover:outline-none hover:border-purple-500">
+                    class="input-wrap hover:outline-none hover:border-purple-500 mb-6">
                     <input
                         class="input"
-                        id="name" type="text" placeholder="Name">
+                        id="name" type="text" placeholder="Full Name">
                     <span class="input-icon">
                         <i class="far fa-user"></i>
                     </span>
                 </div>
-            </div>
-            <div class="mb-6 px-4 md:flex md:items-center">
-                <label class="label md:w-1/2 lg:w-1/3" for="useremail">
-                    Email
-                </label>
                 <div
-                    class="input-wrap hover:outline-none hover:border-purple-500">
+                    class="input-wrap hover:outline-none hover:border-purple-500 mb-6">
                     <input
                         class="input"
-                        id="useremail" type="email" placeholder="Email">
+                        id="useremail" type="email" placeholder="Email Address">
                     <span class="input-icon">
                         <i class="far fa-envelope"></i>
                     </span>
                 </div>
-            </div>
-            <div class="mb-6 px-4 md:flex md:items-center">
-                <label class="label md:w-1/2 lg:w-1/3" for="userpassword">
-                    Password
-                </label>
                 <div
-                    class="input-wrap hover:outline-none hover:border-purple-500">
+                    class="input-wrap hover:outline-none hover:border-purple-500 mb-6">
                     <input
                         class="input"
                         id="userpassword" type="password" placeholder="Password">
@@ -78,14 +47,22 @@
                         <i class="fas fa-unlock-alt"></i>
                     </span>
                 </div>
-            </div>
-            <div class="md:flex md:items-center mb-6 px-4">
-                <div class="md:w-1/2 lg:w-1/3"></div>
-                <div class="w-full">
-                    <button class="btn btn-purple mr-4" type="submit">Register</button>
-                </div>
-            </div>
-        </form>
+                <button class="btn btn-purple mr-4 w-full py-3 mb-4" type="submit">Register</button>
+                <small class="block text-gray-600 uppercase text-center mb-4 font-medium">Or sing up with</small>
+                <ul class="flex w-full justify-between">
+                    <li class="w-5/12 ">
+                        <a href="https://google.com" class="w-full btn shadow-none border border-gray-300 text-black hover:border-2 hover:border-purple-600 hover:shadow-md">
+                            <span class="inline-block mr-2"><i class="fab fa-google-plus-g"></i></span>
+                            Google</a>
+                    </li>
+                    <li class="w-5/12">
+                        <a href="https://github.com" class="w-full btn shadow-none border border-gray-300 text-black hover:border-2 hover:border-purple-600 hover:shadow-md">
+                            <span class="inline-block mr-2"><i class="fab fa-github-alt"></i></span>
+                            GitHub</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
         <p class="my-4 mx-auto text-white">Already have an account?
             <a class="text-white underline" href="login.html"> Sign In</a>
         </p>
