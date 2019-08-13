@@ -15,7 +15,7 @@ body {
 }
 
 .sidebar-link {
-    @apply font-sans block text-sm p-4 truncate text-white w-full rounded;
+    @apply font-sans block text-sm p-4 truncate text-white w-full;
 }
 
 .sidebar-link:hover {
@@ -28,6 +28,10 @@ body {
 
 .btn:focus {
     @apply outline-none shadow-outline;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
 }
 
 .btn-green {
@@ -70,12 +74,20 @@ body {
     @apply bg-gray-600;
 }
 
+.btn-blue {
+    @apply bg-blue-500;
+}
+
+.btn-blue:hover {
+    @apply bg-blue-600;
+}
+
 .w-inherit {
     width: inherit;
 }
 
 .input {
-    @apply appearance-none bg-transparent w-full py-2 px-3 text-gray-700 bg-white rounded;
+    @apply appearance-none bg-transparent w-full py-2 px-3 text-black rounded;
 }
 
 .input:focus {
@@ -83,7 +95,10 @@ body {
 }
 
 .input-wrap {
-    @apply flex items-center py-2 transition p-1 w-full border border-gray-200 rounded;
+    @apply flex items-center py-2 transition p-1 w-full border border-gray-200 rounded bg-gray-200;
+}
+.input-wrap:hover {
+    box-shadow: 0 0 4px #7f9cf5;
 }
 
 .input-icon {
@@ -91,7 +106,7 @@ body {
 }
 
 .label {
-    @apply block text-gray-700 text-sm pr-4 uppercase text-right
+    @apply block text-gray-600 text-sm pr-4
 }
 
 .table-th {
@@ -114,4 +129,17 @@ body {
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(128, 90, 213, .4);
 }
 
+.shadow-blue {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(128, 90, 213, .4);
+}
+
+.shadow-indigo {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(127, 156, 245, .4);
+}
+
+.shadow-indigo-xl {
+    box-shadow: 0 10px 20px 0 rgba(163, 191, 250, .14), 0 40px 40px -5px rgba(127, 156, 245, .4);
+}
+
 @tailwind utilities;
+

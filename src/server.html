@@ -10,13 +10,13 @@
 <body>
 <main class="flex w-full">
     <aside
-        class="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6 px-4 pb-4 bg-indigo-900 h-screen overflow-x-hidden overflow-y-auto fixed inset-y-0 left-0 z-50 shadow-md scrolling-touch">
+        class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 xl:w-1/7 pb-4 bg-indigo-900 h-screen overflow-x-hidden overflow-y-auto fixed inset-y-0 left-0 z-50 shadow-md scrolling-touch">
         <a href="#"
            class="inline-block w-full h-20 pb-4 pt-4 px-4 py-4 mb-4 text-2xl text-white border-b border-gray-600">
             LOGO
         </a>
-        <h2 class="py-4 px-4 text-white border-b border-gray-600 uppercase">Server Details</h2>
-        <nav class="mt-4 w-full">
+        <h2 class="py-2 px-4 text-white uppercase text-sm">Server Details</h2>
+        <nav class="mt-2 w-full">
             <ul class="w-full">
                 <li>
                     <a href="#" class="sidebar-link transition">
@@ -123,45 +123,45 @@
             <div class="w-full  flex flex-col">
                 <form class="w-full  bg-white shadow-md rounded pr-8 pb-4 pt-8 mb-24">
                     <div class="mb-6 ml-4 px-4 md:flex md:items-center">
-                        <label class="label md:w-1/2 lg:w-1/4" for="serverName">
+                        <label class="label md:w-1/2 lg:w-1/4 text-right" for="serverName">
                             Name
                         </label>
 
                         <input
-                            class="input border border-gray-200 rounded hover:outline-none hover:border-yellow-400 md:w-1/2 lg:w-3/4"
+                            class="input border border-gray-200 rounded hover:outline-none hover:border-indigo-500 md:w-1/2 lg:w-3/4"
                             id="serverName" type="text">
                     </div>
                     <div class="mb-6 ml-4 px-4 md:flex md:items-center">
-                        <label class="label md:w-1/2 lg:w-1/4" for="serverSize">
+                        <label class="label md:w-1/2 lg:w-1/4 text-right" for="serverSize">
                             Size(RAM)
                         </label>
 
                         <input
-                            class="input border border-gray-200 rounded hover:outline-none hover:border-yellow-400 md:w-1/2 lg:w-3/4"
+                            class="input border border-gray-200 rounded hover:outline-none hover:border-indigo-500 md:w-1/2 lg:w-3/4"
                             id="serverSize" inputmode="decimal" pattern="-?(\d+|\d+.\d+|.\d+)([eE][-+]?\d+)? ">
                     </div>
                     <div class="mb-6 ml-4 px-4 md:flex md:items-center">
-                        <label class="label md:w-1/2 lg:w-1/4" for="serverPort">
+                        <label class="label md:w-1/2 lg:w-1/4 text-right" for="serverPort">
                             SSH Port
                         </label>
 
                         <input
-                            class="input border border-gray-200 rounded hover:outline-none hover:border-yellow-400 md:w-1/2 lg:w-1/4"
+                            class="input border border-gray-200 rounded hover:outline-none hover:border-indigo-500 md:w-1/2 lg:w-1/4"
                             id="serverPort" inputmode="decimal" pattern="-?(\d+|\d+.\d+|.\d+)([eE][-+]?\d+)?">
-                        <label class="label md:w-1/2 lg:w-1/4" for="serverIp">
+                        <label class="label md:w-1/2 lg:w-1/4 text-right" for="serverIp">
                             IP Address
                         </label>
 
                         <input
-                            class="input border border-gray-200 rounded hover:outline-none hover:border-yellow-400 md:w-1/2 lg:w-1/4"
+                            class="input border border-gray-200 rounded hover:outline-none hover:border-indigo-500 md:w-1/2 lg:w-1/4"
                             id="serverIp" inputmode="decimal" pattern="-?(\d+|\d+.\d+|.\d+)([eE][-+]?\d+)?">
                     </div>
                     <div class="md:flex md:items-center mb-6 ml-4 px-4">
-                        <label class="label md:w-1/2 lg:w-1/4" for="serverPhp">
+                        <label class="label md:w-1/2 lg:w-1/4 text-right" for="serverPhp">
                             PHP Version
                         </label>
                         <div class="relative md:w-1/2 lg:w-1/4">
-                            <select class="input border border-gray-200 hover:border-yellow-400"
+                            <select class="input border border-gray-200 hover:border-indigo-500"
                                     id="serverPhp">
                                 <option>7.1</option>
                                 <option>7.2</option>
@@ -172,11 +172,11 @@
                                 <i class="fas fa-angle-down"></i>
                             </span>
                         </div>
-                        <label class="label md:w-1/2 lg:w-1/4 pl-4" for="serverDatabase">
+                        <label class="label md:w-1/2 lg:w-1/4 pl-4 text-right" for="serverDatabase">
                             Database
                         </label>
                         <div class="relative md:w-1/2 lg:w-1/4">
-                            <select class="input  border border-gray-200 hover:border-yellow-400 relative"
+                            <select class="input  border border-gray-200 hover:border-indigo-500 relative"
                                     id="serverDatabase">
                                 <option>MySQL (5.1)</option>
                                 <option>MySQL (5.2)</option>
@@ -189,11 +189,11 @@
                         </div>
                     </div>
                     <div class="mb-6 ml-4 px-4 md:flex md:items-center">
-                        <label class="label md:w-1/2 lg:w-1/4" for="serverRecipe">
+                        <label class="label md:w-1/2 lg:w-1/4 text-right" for="serverRecipe">
                             Post-Provision Recipe
                         </label>
                         <div class="relative md:w-1/2 lg:w-3/4 ">
-                            <select class="input border border-gray-200 hover:border-yellow-400"
+                            <select class="input border border-gray-200 hover:border-indigo-500"
                                     id="serverRecipe">
                                 <option>None</option>
                                 <option>1</option>
@@ -206,12 +206,12 @@
                         </div>
                     </div>
                     <div class="mb-6 ml-4 px-4 md:flex md:items-center">
-                        <label class="label md:w-1/2 lg:w-1/4" for="serverDatadabaseName">
+                        <label class="label md:w-1/2 lg:w-1/4 text-right" for="serverDatadabaseName">
                             Database Name
                         </label>
 
                         <input
-                            class="input border border-gray-200 rounded hover:outline-none hover:border-yellow-400 md:w-1/2 lg:w-3/4"
+                            class="input border border-gray-200 rounded hover:outline-none hover:border-indigo-500 md:w-1/2 lg:w-3/4"
                             id="serverDatadabaseName" type="text">
                     </div>
                     <div class="md:flex md:items-center mb-6 px-4 ml-4">
