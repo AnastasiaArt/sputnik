@@ -3,6 +3,10 @@
 body {
     @apply font-sans bg-gray-100;
 }
+/*a:hover {*/
+/*@apply tracking-widest transition*/
+/*}*/
+
 
 @tailwind components;
 
@@ -15,7 +19,7 @@ body {
 }
 
 .sidebar-link {
-    @apply font-sans block text-sm py-4 px-6 truncate text-white w-full;
+    @apply font-sans block text-sm py-4 px-6 truncate text-white w-full transition;
 }
 
 .sidebar-link:hover {
@@ -86,10 +90,17 @@ body {
     width: inherit;
 }
 
+.link:hover {
+    @apply tracking-widest;
+}
+
 .input {
     @apply appearance-none bg-transparent w-full py-2 px-3 text-black rounded;
 }
 
+.label {
+    @apply block text-gray-600 text-sm pr-4;
+}
 .input:focus {
     @apply outline-none;
 }
@@ -99,14 +110,37 @@ body {
 }
 .input-wrap:hover {
     box-shadow: 0 0 4px #7f9cf5;
+    @apply outline-none border-indigo-500 bg-white;
 }
-
 .input-icon {
     @apply block text-gray-500 ml-auto w-10 pl-2;
 }
 
-.label {
-    @apply block text-gray-600 text-sm pr-4
+.input-float-icon {
+    @apply block text-gray-500 w-10 right-0 absolute block pl-2 h-12 py-3;
+}
+.input-float {
+    @apply bg-white w-full py-3 px-4 text-black rounded block border border-gray-200 h-12;
+}
+.input-float::placeholder {
+    color: transparent;
+}
+.input-float:hover {
+    box-shadow: 0 0 4px #7f9cf5;
+    @apply outline-none border-indigo-500 bg-white;
+}
+.input-float-wrap {
+    @apply relative transition;
+}
+.input-float-label {
+    @apply absolute top-0 left-0 block w-full text-gray-700 py-3 px-4 border border-transparent rounded transition h-12;
+}
+.input-float-wrap input:not(:placeholder-shown) {
+    @apply pb-1 pt-3;
+}
+
+.input-float-wrap input:not(:placeholder-shown) + label {
+    @apply py-1 text-xs text-gray-500;
 }
 
 .table-th {
