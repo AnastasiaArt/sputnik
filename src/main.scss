@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import "sass/tailwind/_base.scss";
+
+body {
+    @apply font-sans bg-gray-100;
+}
+
+@import  "sass/tailwind/_components.scss";
+
+@import "sass/blocks/btn.scss";
+@import "sass/blocks/sidebar.scss";
+@import "sass/blocks/input.scss";
+
+.bg-gradient-blue {
+    background: linear-gradient(150deg, rgb(119, 149, 248) 15%, rgb(103, 114, 229) 70%, rgb(85, 90, 191) 94%);
+}
+
+.transition {
+    transition: all 0.2s linear;
+}
+
+.w-inherit {
+    width: inherit;
+}
+
+.link:hover {
+    @apply tracking-widest;
+}
+
+.table-th {
+    @apply font-normal py-3 px-4 text-left;
+}
+
+.table-td {
+    @apply font-normal py-2 px-4 text-sm;
+}
+
+.shadow-yellow {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(236, 201, 75, .4);
+}
+
+.shadow-green {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(72, 187, 120, .4);
+}
+
+.shadow-purple {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(128, 90, 213, .4);
+}
+
+.shadow-blue {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(128, 90, 213, .4);
+}
+
+.shadow-indigo {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(127, 156, 245, .4);
+}
+
+.shadow-indigo-xl {
+    box-shadow: 0 10px 20px 0 rgba(163, 191, 250, .14), 0 40px 40px -5px rgba(127, 156, 245, .4);
+}
+
+@import  "sass/tailwind/_utilites.scss";
+
+
+
+

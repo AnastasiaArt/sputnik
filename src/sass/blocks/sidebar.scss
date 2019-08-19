@@ -1,0 +1,7 @@
+.sidebar-link {
+    @apply font-sans block text-sm py-4 px-6 truncate text-white w-full transition;
+
+    &:hover {
+        @apply bg-indigo-500;
+    }
+}

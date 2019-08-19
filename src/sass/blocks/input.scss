@@ -1,0 +1,61 @@
+.input {
+    @apply appearance-none bg-transparent w-full py-3 px-4 text-black rounded h-12;
+
+    &focus {
+        @apply outline-none;
+    }
+}
+
+.label {
+    @apply block text-gray-600 text-sm pr-4 py-1;
+}
+
+.input-wrap {
+    @apply flex items-center transition px-1 w-full border border-gray-200 rounded bg-gray-200;
+
+    &:hover {
+        box-shadow: 0 0 4px #7f9cf5;
+        @apply outline-none border-indigo-500 bg-white;
+    }
+}
+
+.input-icon {
+    @apply block text-gray-500 ml-auto w-10 pl-2;
+}
+
+.input-float-icon {
+    @apply block text-gray-500 w-10 right-0 absolute block pl-2 h-12 py-3;
+}
+
+.input-float-label {
+    @apply absolute top-0 left-0 block w-full text-gray-700 py-3 px-4 border border-transparent rounded transition h-12;
+}
+
+.input-float {
+    @apply block border border-gray-200 transition;
+
+    &::placeholder {
+        color: transparent;
+    }
+
+    &:hover {
+        box-shadow: 0 0 4px #7f9cf5;
+        @apply outline-none border-indigo-500 bg-white;
+    }
+}
+
+.input-float-white {
+    @apply bg-white;
+}
+
+.input-float-wrap {
+    @apply relative transition;
+
+    & .input-float:not(:placeholder-shown) {
+        @apply pb-1 pt-3;
+    }
+
+    & .input-float:not(:placeholder-shown) + .input-float-label {
+        @apply py-1 text-xs text-gray-500;
+    }
+}

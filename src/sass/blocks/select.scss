@@ -1,0 +1,7 @@
+.input {
+    @apply appearance-none bg-transparent w-full py-3 px-4 text-black rounded h-12;
+
+    &focus {
+        @apply outline-none;
+    }
+}

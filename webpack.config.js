@@ -3,26 +3,32 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: './src/main.css',
+    entry: './src/main.scss',
     mode: process.env.NODE_ENV,
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: [
-                        { loader: 'css-loader', options: { importLoaders: 1 } },
-                        'postcss-loader',
-                    ],
+                        'css-loader',
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                ident: 'postcss',
+                                plugins: [
+                                    require('tailwindcss'),
+                                    require('autoprefixer'),
+                                ]
+                            }
+                        },'sass-loader']
                 }),
-            },
-        ],
+            }
+        ]
     },
     plugins: [
-        new ExtractTextPlugin('main.css', {
-            disable: process.env.NODE_ENV === 'development',
-        }),
+        new ExtractTextPlugin("main.css"),
         new HtmlWebpackPlugin( {
             filename: 'index.html',
             template: 'src/index.html'

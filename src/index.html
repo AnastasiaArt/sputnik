@@ -118,72 +118,167 @@
         </nav>
         <div class="p-4 mt-20">
 
-<!--            headers-->
-            <h1 class="text-3xl font-sans font-thin mb-6">Laravel Sputnik</h1>
-            <h2 class="text-2xl font-sans font-thin mb-6">Laravel Sputnik</h2>
-            <h3 class="text-xl font-sans font-thin mb-6">Laravel Sputnik</h3>
+            <!--            headers-->
+            <div class="inline-block w-1/3">
+                <p class="mb-6 text-gray-500 pt-6">Заловки h1,h2,h3</p>
+                <h1 class="text-3xl font-sans font-thin mb-6">Laravel Sputnik</h1>
+                <h2 class="text-2xl font-sans font-thin mb-6">Laravel Sputnik</h2>
+                <h3 class="text-xl font-sans font-thin mb-6">Laravel Sputnik</h3>
+            </div>
+            <div class="inline-block w-1/3">
+                <p class="mb-6 text-gray-500 pt-6">Заловки для таблиц</p>
+                <div class="inline-block mr-3">
+                    <h4 class="text-base font-medium font-sans uppercase  mb-6">Laravel</h4>
+                    <h4 class="text-sm font-medium font-sans uppercase  mb-6">Laravel</h4>
+                    <h5 class="text-xs font-medium font-sans uppercase  mb-6">Laravel</h5>
+                </div>
+                <div class="inline-block">
+                    <h4 class="text-base font-bold font-sans uppercase text-gray-700 mb-6">Laravel</h4>
+                    <h4 class="text-sm font-bold font-sans uppercase text-gray-700 mb-6">Laravel</h4>
+                    <h5 class="text-xs font-bold font-sans uppercase text-gray-700 mb-6">Laravel</h5>
+                </div>
+            </div>
 
-<!--            form inputs-->
-            <div class="mb-3 w-1/2 relative">
-                <label class="label" for="username">
-                    Username
-                </label>
-                <div
-                    class="input-wrap">
-                    <input
-                        class="input"
-                        id="username" type="text" placeholder="Username">
-                    <span class="input-icon">
+            <!--            form inputs-->
+            <p class="mb-6 text-gray-500 pt-6">Элементы форм INPUT</p>
+            <div class="w-full mb-3 flex items-center">
+
+                <div class="w-1/3 mr-6 relative">
+
+                    <label class="label" for="username">
+                        Username
+                    </label>
+                    <div
+                        class="input-wrap">
+                        <input
+                            class="input"
+                            id="username" type="text" placeholder="Username">
+                        <span class="input-icon">
                         <i class="far fa-user"></i>
                     </span>
+                    </div>
                 </div>
-            </div>
-            <div class="mb-3 w-1/2 relative">
-                <label class="label" for="username">
-                    Username
-                </label>
-                <div
-                    class="input-wrap bg-white">
-                    <input
-                        class="input"
-                        id="First name" type="text" placeholder="First name">
-                    <span class="input-icon">
+                <div class="w-1/3 relative">
+                    <label class="label" for="username">
+                        Username
+                    </label>
+                    <div
+                        class="input-wrap bg-white">
+                        <input
+                            class="input"
+                            id="First name" type="text" placeholder="First name">
+                        <span class="input-icon">
                         <i class="far fa-user"></i>
                     </span>
+                    </div>
                 </div>
             </div>
-            <div class="mb-3 w-1/2 input-float-wrap">
-                <input class="input-float" id="name" type="text" placeholder="Name">
-                <label class="input-float-label" for="name">Name</label>
-            </div>
-            <div class="mb-6 w-1/2 input-float-wrap">
-                 <span class="input-float-icon ">
+            <p class="mb-6 text-gray-500 pt-6">Элементы форм INPUT (плавающий Label) </p>
+            <div class="w-full mb-6 flex items-center">
+                <div class="mr-6 w-1/3 input-float-wrap">
+                    <input class="input input-float input-float-white" id="name" type="text" placeholder="Name">
+                    <label class="input-float-label" for="name">Name</label>
+                </div>
+                <div class="w-1/3 input-float-wrap">
+                 <span class="input-float-icon">
                         <i class="far fa-user"></i>
                  </span>
-                <input class="input-float pr-10" id="fullname" type="text" placeholder="Full name">
-                <label class="input-float-label pr-10" for="fullname">Full Name</label>
+                    <input class="input input-float input-float-white pr-10" id="fullname" type="text"
+                           placeholder="Full name">
+                    <label class="input-float-label pr-10" for="fullname">Full Name</label>
 
+                </div>
             </div>
 
-<!--            buttons-->
-            <div class="w-1/2 pb-10">
-                <button type="button" class="btn btn-yellow w-1/4">Create</button>
-                <a href="#" class="btn btn-gray w-1/4">Create</a>
-                <button type="button" class="btn btn-blue w-1/4">Create</button>
-                <button class="btn btn-indigo shadow-indigo-xl" type="submit">Register</button>
+            <div class="mb-6 w-1/2">
+                <label class="label" for="serverPhp">
+                    PHP Version
+                </label>
+                <div class="relative transition">
+                    <select class="input border border-gray-200 hover:border-indigo-500 bg-white"
+                            id="serverPhp">
+                        <option>7.1</option>
+                        <option>7.2</option>
+                        <option>7.3</option>
+                    </select>
+                    <span
+                        class="block pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                </div>
+            </div>
+            <!--            buttons-->
+            <div class=" pb-10">
+                <p class="mb-6 pt-6 text-gray-500">Кнопки</p>
+                <button type="button" class="btn btn-yellow mr-3 mb-3">Create</button>
+                <a href="#" class="btn btn-gray mr-3 mb-3">Create</a>
+                <button type="button" class="btn btn-blue mr-3 mb-3">Create</button>
+                <button class="btn btn-indigo shadow-indigo-xl mr-3 mb-3" type="submit">Register</button>
+                <a href="https://google.com" class="btn btn-outline mr-3 mb-3">
+                    <span class="inline-block mr-2"><i class="fab fa-google-plus-g"></i></span>
+                    Google
+                </a>
+                <button type="button" class="btn btn-yellow btn-icon mr-3 mb-3">
+                    <svg class="fill-current w-4 h-4 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
+                    </svg>
+                    <span>Download</span>
+                </button>
             </div>
 
-<!--            links-->
+            <!--            links-->
             <div class="w-1/2 mb-6">
-                <a class="underline text-indigo inline-block hover:font-bold transition mr-6" href="#"> Sign In</a>
+                <p class="mb-6 pt-3 text-gray-500">Ссылки</p>
+                <a class="underline text-indigo-500 inline-block font-medium hover:text-indigo-700 transition mr-6"
+                   href="#"> Sign In</a>
                 <a class="text-indigo-500 hover:text-indigo-700 inline-block transition mr-6" href="#"> Sign In</a>
                 <a class="text-green-500 hover:text-green-700 inline-block transition mr-6" href="#"> Sign In</a>
                 <a class="text-yellow-500 hover:text-yellow-700 inline-block  transition mr-6" href="#"> Sign In</a>
-                <a class="text-indigo-500 text-xs hover:text-yellow-700 transition mr-6" href="#"> Sign In</a>
-                <a class="text-indigo-500 text-xs hover:text-yellow-700  transition uppercase font-bold mr-6" href="#"> Sign In</a>
-                <a class="link text-indigo-500 text-xs uppercase hover:text-indigo-700 transition font-bold mr-6" href="#"> Sign In</a>
+                <a class="text-indigo-500 text-xs hover:text-indigo-700 transition mr-6" href="#"> Sign In</a>
+                <a class="text-blue-500 text-xs hover:text-blue-700  transition uppercase font-bold mr-6" href="#"> Sign
+                    In</a>
+                <a class="link text-indigo-500 text-xs uppercase hover:text-indigo-700 transition font-bold mr-6"
+                   href="#"> Sign In</a>
+            </div>
+
+            <p class="mb-6 pt-6 text-gray-500">Таблицы</p>
+            <div class="my-4">
+                <h4 class="text-sm font-bold font-sans uppercase  mb-3 text-gray-700">Servers</h4>
+                <table class="w-full">
+                    <tr class="border-b border-gray-200 bg-gray-300 text-sm px-2 px-1">
+                        <th class="table-th">Name</th>
+                        <th class="table-th">IP Adress</th>
+                        <th class="table-th">PHP Version</th>
+                        <th class="table-th">Status</th>
+                        <th class="table-th">Connection</th>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-200">
+                        <td class="table-td">First</td>
+                        <td class="table-td">192.168.0.3</td>
+                        <td class="table-td">7.3</td>
+                        <td class="table-td"><a href="#"
+                                                class="text-indigo-500 hover:text-indigo-700 inline-block transition mr-6">Active</a>
+                        </td>
+                        <td class="table-td">Successful</td>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-200">
+                        <td class="table-td">Second</td>
+                        <td class="table-td">180.168.0.3</td>
+                        <td class="table-td">7.3</td>
+                        <td class="table-td">Active</td>
+                        <td class="table-td">Successful</td>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-200">
+                        <td class="table-td">Third</td>
+                        <td class="table-td">192.168.0.0</td>
+                        <td class="table-td">7.2</td>
+                        <td class="table-td">Active</td>
+                        <td class="table-td">Successful</td>
+                    </tr>
+                </table>
             </div>
         </div>
+
     </div>
 </main>
 <footer>
